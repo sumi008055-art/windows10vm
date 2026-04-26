@@ -95,7 +95,5 @@ echo "❗ First boot may take 20-30 minutes for Windows install"\n\
 echo "===================================================="\n\
 \n\
 tail -f /dev/null\n' > /start.sh && chmod +x /start.sh
-
-VOLUME ["/data", "/iso"]
 EXPOSE 6080 3389
 CMD ["/start.sh"]
